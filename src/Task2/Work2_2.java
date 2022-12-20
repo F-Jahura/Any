@@ -9,10 +9,13 @@ public class Work2_2 {
         int a = scanner.nextInt();
         System.out.println("Please enter B: ");
         int b = scanner.nextInt();
-        for (int i = a; i<=b; i++){
+        for (int i = a+1; i < b; i++){
             if (i%5 == 0 && i%10 != 0){
                 System.out.println(i + "");
             }
+        }
+        if( a >= b){
+            System.out.println("The number is not correct");
         }
     }
 }

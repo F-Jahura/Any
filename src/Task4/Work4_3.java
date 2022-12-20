@@ -16,11 +16,12 @@ public class Work4_3 {
             //System.out.println();
         }
 
-        int sum = 0;
+
         int maxSum = 0;
         int maxIndex = 0;
 
         for (int i =0; i<matrix.length; i++){
+            int sum = 0;
             for (int j = 0; j<matrix[i].length; j++){
                 sum = sum + matrix[i][j];
             }

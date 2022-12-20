@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class Work4_4 {
     public static void main(String[] args) {
-        int[] array = new int[100];
+        int[] array = new int[15];
         Random random = new Random();
 
         for (int i =0; i<array.length; i++){
@@ -14,21 +14,21 @@ public class Work4_4 {
         }
         System.out.println(Arrays.toString(array));
 
-        int maxElement = 0;
         int sumMax = 0;
         int maxIndex = 0;
 
-        for (int i =0; i<array.length; i++) {
-            if (array[i] > maxElement) {
-                maxElement = array[i];
+        for (int i = 0; i < array.length-2; i++){
+            int sum = 0;
+            for (int j = i; j < i+3;  j++){
+                sum = sum + array[j];
+            }
+            if (sum > sumMax){
+                sumMax = sum;
                 maxIndex = i;
-                sumMax = maxElement + array[i + 1] + array[i + 2];
             }
         }
-        //System.out.println("Maximum number: " + maxElement);
-        System.out.println("Total summ of three elements: " + sumMax);
+        System.out.println("Maximum sum of next three numbers: " + sumMax);
         System.out.println("Index of maximum number: " + maxIndex);
-
 
 
     }

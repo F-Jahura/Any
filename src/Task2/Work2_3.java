@@ -9,8 +9,8 @@ public class Work2_3 {
         int a = scanner.nextInt();
         System.out.println("Please enter B:");
         int b = scanner.nextInt();
-        int m = a;
-        while (m <= b){
+        int m = a+1;
+        while (m < b){
             if (m % 5 == 0 && m % 10 != 0){
                 System.out.println(m + "");
             } m++;

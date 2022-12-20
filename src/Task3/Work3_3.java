@@ -11,12 +11,12 @@ public class Work3_3 {
             double a = scanner.nextDouble();
             System.out.println("Please enter B: ");
             double b = scanner.nextDouble();
-            double result = a/b;
 
             if (b == 0){
                 System.out.println("Cannot be divided by zero");
                 continue;
             }
+            double result = a/b;
             System.out.println("Result: " + result);
         }
     }
